@@ -1,0 +1,367 @@
+/* css home */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1f1f60;
+    color: white;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #1f1f60;
+}
+
+.logo {
+    flex: 1;
+}
+
+.logo img {
+    height: 70px;
+    width: auto;
+}
+
+nav {
+    margin-right: 10px; /* jarak kecil ke icon */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0; /* pastikan tidak ada margin */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    position: relative; /* supaya bisa pakai ::after */
+    padding-bottom: 5px; /* beri ruang untuk garis bawah */
+    transition: color 0.3s;
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #f1e99c; /* warna garis bawah */
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.user-icon {
+    font-size: 1.5em;
+}
+
+
+.content {
+    max-width: 1000px;
+    margin: 80px auto;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding-left: 0;
+}
+
+.content .text {
+    flex: 1;
+    text-align: left;
+}
+
+.content .image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.content .image img {
+    width: auto;
+    max-width: 450px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+
+
+h1 {
+    font-size: 2.5em;
+    margin: 20px 0;
+    text-align: left;         /* Memastikan rata kiri */
+}
+
+p {
+    margin: 20px 0;
+    font-size: 1.1em;
+    text-align: left;         /* Memastikan rata kiri */
+    line-height: 1.6;
+}
+
+.buttons {
+    margin-top: 30px;
+    text-align: left;         /* Tombol juga rata kiri */
+}
+
+.shop-now, .explore {
+    background-color: #f1e99c;
+    color: #1f1f60;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+.shop-now:hover, .explore:hover {
+    background-color: #e0d78c;
+}
+
+/* css halaman produk */
+
+.produk-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 20px;
+}
+
+.produk {
+    background-color: white;
+    color: #1f1f60;
+    border-radius: 12px;
+    padding: 20px;
+    width: 240px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.produk img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.produk button {
+    margin-top: 10px;
+    padding: 10px 16px;
+    background-color: #f1e99c;
+    color: #1f1f60;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.produk button:hover {
+    background-color: #e0d78c;
+}
+
+/* css halaman login */
+
+.login-container {
+    max-width: 400px;
+    margin: 100px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    color: #1f1f60;
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #f1e99c;
+    border: none;
+    color: #1f1f60;
+    font-size: 1em;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color: #e0d78c;
+}
+
+/* css halaman pembelian */
+
+.produk-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      padding: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .produk-card {
+      background-color: white;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      color: #1f1f60;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .produk-card:hover {
+      transform: scale(1.05);
+    }
+
+    .produk-card img {
+      max-width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .produk-card h3 {
+      margin: 15px 0 5px;
+    }
+
+    .produk-card p {
+      margin: 5px 0;
+    }
+
+    .produk-card button {
+      margin-top: 10px;
+      background-color: #f1e99c;
+      color: #1f1f60;
+      border: none;
+      padding: 8px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .produk-card button:hover {
+      background-color: #e0d78c;
+    }
+
+/* css form pembelian */
+ body {
+      background-color: #1f1f60;
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+    }
+    .container {
+      max-width: 500px;
+      background: white;
+      color: #1f1f60;
+      margin: 60px auto;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+    .produk-detail {
+      text-align: center;
+    }
+    .produk-detail img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 12px 0;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 1em;
+    }
+    form button {
+      width: 100%;
+      padding: 12px;
+      background-color: #f1e99c;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 1.1em;
+      color: #1f1f60;
+    }
+    form button:hover {
+      background-color: #e0d78c;
+    }
+/* 
+    scc membership */
+
+
+    body {
+      background-color: #1f1f60;
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 500px;
+      background-color: white;
+      color: #1f1f60;
+      margin: 60px auto;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    form input, form select {
+      width: 100%;
+      padding: 10px;
+      margin: 12px 0;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 1em;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #f1e99c;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 1.1em;
+      color: #1f1f60;
+    }
+
+    button:hover {
+      background-color: #e0d78c;
+    }
