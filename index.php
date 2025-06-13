@@ -30,8 +30,7 @@
             <h1>Modern Design<br>Home Interior</h1>
             <p>We produce wall decor using premium materials but these materials are environmentally friendly.</p>
             <div class="buttons">
-                <button class="shop-now" onclick="window.location.href='pembelian.php'">Shop Now</button>
-                <!-- <button class="explore">explore</button> -->
+                <button class="shop-now" onclick="window.location.href='produk.php'">Shop Now</button>
             </div>
         </div>
         <div class="image">

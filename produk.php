@@ -1,5 +1,3 @@
-
-
 <?php
 include 'koneksi.php';
 ?>
@@ -13,7 +11,12 @@ include 'koneksi.php';
   
 </head>
 <body>
-  <h2 style="text-align:center; margin-top:30px;">Daftar Produk Rebant</h2>
+  <h2 style="text-align:center; margin-top:30px; color:white;">Daftar Produk Rebant</h2>
+
+<div style="text-align: center; margin-top: 30px;">
+  <a href="produk_terlaris.php" class="btn-terlaris">🔥 Lihat Produk Terlaris 🔥</a>
+  <a href="produk-kosong.php" class="btn-kosong">🛒 Produk Belum Pernah Dibeli</a>
+</div>
 
   <div class="produk-container">
     <?php
@@ -27,7 +30,7 @@ include 'koneksi.php';
       echo "<p>Ukuran: {$row['ukuran']}</p>";
       echo "<p>Stok: {$row['stok']} pcs</p>"; 
       echo "<p>Harga: Rp " . number_format($row['harga'], 0, ',', '.') . "</p>";
-      echo "<button>Beli</button>";
+      echo "<a href='form-pembelian.php?produk={$row['id_produk']}&nama=" . urlencode($row['nama_produk']) . "&harga={$row['harga']}&ukuran=" . urlencode($row['ukuran']) . "' class='btn-beli'>Beli Sekarang</a>";
       echo "</div>";
     }
     ?>

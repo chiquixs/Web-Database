@@ -1,5 +1,4 @@
 /* css home */
-
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -94,24 +93,22 @@ nav ul li a:hover::after {
     object-fit: contain;
 }
 
-
-
 h1 {
     font-size: 2.5em;
     margin: 20px 0;
-    text-align: left;         /* Memastikan rata kiri */
+    text-align: left;         
 }
 
 p {
     margin: 20px 0;
     font-size: 1.1em;
-    text-align: left;         /* Memastikan rata kiri */
+    text-align: left;       
     line-height: 1.6;
 }
 
 .buttons {
     margin-top: 30px;
-    text-align: left;         /* Tombol juga rata kiri */
+    text-align: left;        
 }
 
 .shop-now, .explore {
@@ -130,7 +127,6 @@ p {
 }
 
 /* css halaman produk */
-
 .produk-container {
     display: flex;
     flex-wrap: wrap;
@@ -170,48 +166,55 @@ p {
     background-color: #e0d78c;
 }
 
-/* css halaman login */
-
-.login-container {
-    max-width: 400px;
-    margin: 100px auto;
-    background-color: white;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.3);
-    color: #1f1f60;
-}
-
-.login-container h2 {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.login-container input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-}
-
-.login-container button {
-    width: 100%;
-    padding: 10px;
+.btn-beli {
+    display: inline-block;
     background-color: #f1e99c;
-    border: none;
-    color: #1f1f60;
-    font-size: 1em;
-    border-radius: 6px;
-    cursor: pointer;
+    color: 1f1f60 !important;
+    padding: 10px 16px;
+    text-decoration: none !important;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+
+  .btn-beli:hover {
+    background-color: #f1e99c;
+  }
+
+  .btn-terlaris {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #C62E2E;
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease;
 }
 
-.login-container button:hover {
-    background-color: #e0d78c;
+.btn-terlaris:hover {
+  background-color: #ff4c4c;
+}
+
+.btn-kosong {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease;
+}
+
+.btn-kosong:hover {
+  background-color: #339dff;
 }
 
 /* css halaman pembelian */
-
 .produk-container {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -265,7 +268,7 @@ p {
     }
 
 /* css form pembelian */
- body {
+    body {
       background-color: #1f1f60;
       color: white;
       font-family: Arial, sans-serif;
@@ -314,10 +317,9 @@ p {
     form button:hover {
       background-color: #e0d78c;
     }
-/* 
-    scc membership */
 
 
+/* scc membership */
     body {
       background-color: #1f1f60;
       color: white;
@@ -364,4 +366,121 @@ p {
 
     button:hover {
       background-color: #e0d78c;
+    }
+
+/* css produk terlaris */
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #1f1f60;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #1f1f60;
+      margin-bottom: 30px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 10px;
+    }
+
+    th, td {
+      padding: 14px 16px;
+      text-align: center;
+      border-bottom: 1px solid #f1e99c;
+    }
+
+    th {
+      background-color: #f1e99c;
+      color: #1f1f60;
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #f1e99c;
+      color: #1f1f60;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .back-btn:hover {
+      background-color:rgb(213, 206, 144);
+    }
+
+/* css produk kosong */
+  body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #1f1f60;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #1f1f60;
+      margin-bottom: 30px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    th, td {
+      padding: 14px 16px;
+      text-align: center;
+      border-bottom: 1px solid #f1e99c;
+    }
+
+    th {
+      background-color: #f1e99c;
+      color: #1f1f60;
+    }
+
+    tr:hover {
+      background-color: #f9f9f9;
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: #f1e99c;
+      color: #1f1f60;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .back-btn:hover {
+      background-color: rgb(213, 206, 144);
     }

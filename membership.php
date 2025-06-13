@@ -6,14 +6,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $umur = $_POST['umur'];
     $kategori = $_POST['kategori'];
 
-    // Simpan ke tabel member
-    mysqli_query($koneksi, "INSERT INTO member (nama, umur) VALUES ('$nama', $umur)");
+    // simpen
+    mysqli_query($koneksi, "INSERT INTO member (nama, umur, kategori) VALUES ('$nama', $umur, '$kategori')");
 
-    // Ambil id_member terakhir
+    // ambil id member terakir
     $id_member = mysqli_insert_id($koneksi);
-
-    // Simpan ke detail_member
-    mysqli_query($koneksi, "INSERT INTO member_detail (kategori, id_member) VALUES ('$kategori', $id_member)");
 
     echo "<script>alert('Berhasil menjadi member!');</script>";
 }

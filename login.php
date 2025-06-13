@@ -32,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <form action="" method="post">
       <input type="text" name="nama" placeholder="Nama Lengkap" required />
       <input type="text" name="no_hp" placeholder="Nomor HP" required />
-       <input type="text" name="email" placeholder="Email" required />
+        <input type="text" name="email" placeholder="Email" required />
       <textarea name="alamat" placeholder="Alamat" required></textarea>
       <button type="submit">Login</button>
     </form>
