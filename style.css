@@ -17,6 +17,10 @@ body {
     height: 100vh;
 }
 
+main {
+  background: #ffffff;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -83,16 +87,21 @@ nav ul li a:hover::after {
 
 
 .content {
-    max-width: 100%;
-    margin: 20px 120px;
-    display: flex;
-    gap: 30px;
-    align-items: center;
-    padding-left: 0;
+  max-width: 100%;
+  /* margin: 20px 120px; */
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  padding-left: 0;
+  background: #1f1f60;
+  margin-bottom: 50px;
+  padding-bottom: 100px;
 }
+
 
 .content .text {
     flex: 1;
+    margin-left: 120px;
     /* text-align: left; */
 }
 
@@ -100,6 +109,7 @@ nav ul li a:hover::after {
     flex: 1;
     display: flex;
     justify-content: center;
+    margin-right: 80px;
 }
 
 .content .image img {
@@ -115,11 +125,25 @@ nav ul li a:hover::after {
   margin-bottom: 45px;
 }
 
+.slide {
+  width: 100%;
+  transition: opacity 0.5s ease-in-out;
+  /* display: none; */
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+}
+
+.slide.active {
+  opacity: 1;
+  z-index: 1;
+}
 
 h1 {
     font-size: 3.5em;
     margin: 0px 0;
-    text-align: left;         /* Memastikan rata kiri */
+    text-align: left; /* Memastikan rata kiri */
+    font-family: 'Poppins', sans-serif;
 }
 
 p {
@@ -151,10 +175,10 @@ p {
     background-color: #e0d78c;
     transform: scale(1.05);
 }
-/* 
+
 html {
   scroll-behavior: smooth;
-} */
+}
 
 
 /* css halaman produk */
@@ -249,7 +273,7 @@ html {
 .btn-kategori {
   display: inline-block;
   padding: 12px 25px;
-  background-color: #2E99B0;
+  background-color: #007BFF;
   color: white;
   text-decoration: none;
   border-radius: 12px;
@@ -259,7 +283,7 @@ html {
 }
 
 .btn-kategori:hover {
-  background-color: #5eb1c4;
+  background-color: #339dff;
 }
 
 

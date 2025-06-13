@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rebant - Home Interior</title>
-    <!-- <div class="user-icon"> -->
-</div>
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
+
+
+
 <body>
     <header>
         <nav>
@@ -16,8 +17,7 @@
                 <img src="image/logo.png" alt="logo rebant">
             </div>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
+                <li><a href="#about">About Us</a></li>
                 <li><a href="produk.php">Product</a></li>
                 <li><a href="membership.php">Membership</a></li>
             </ul>
@@ -37,7 +37,7 @@
         </div>
     </section>
 
-    <section class="about-us">
+    <section class="about-us" id="about" data-aos="fade-down">
         <h1>ABOUT US</h1>
         <div class="underline"></div>
         <div class="desc">
@@ -51,9 +51,6 @@
                     From minimalist designs to nature-inspired artwork, our products are made to bring life, depth, and harmony into your space.
                     Join thousands of satisfied customers who trust REBANT to transform their walls into statements of style and comfort.
                 </p>
-                <!-- <div class="button">
-            <button>Contact Us</button>
-        </div> -->
             <div class="button">
                 <button onclick="location.href='#contact'">Contact Us</button>
             </div>
@@ -62,7 +59,7 @@
         </div>
     </section>
 
-    <section class="membership">
+    <section class="membership" data-aos="fade-up">
         <div class="mb-box">
             <div class="mb-content">
                 <img src="image/2.jpeg" alt="">
@@ -75,7 +72,7 @@
         </div>
     </section>
 
-    <section class="address" id="contact">
+    <section class="address" id="contact" data-aos="fade-up">
         <div class="address-box">
             <div class="address-left">
                 <h2>Visit Our Shop</h2>
@@ -88,11 +85,11 @@
             <div class="address-right">
                 <div class="address-item">
                     <!-- <i class="fa-solid fa-clock"></i> -->
-                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#fef5ac" d="M256 0a256 256 0 1 1 0 512A256 256 0 1 1 256 0zM232 120l0 136c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2 280 120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/></svg>
-                     <div class="detail">
-                        <h3>Open hours</h3>
-                        <p>Mon-Sat 8.30am - 10:00pm</p>
-                     </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#fef5ac" d="M256 0a256 256 0 1 1 0 512A256 256 0 1 1 256 0zM232 120l0 136c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2 280 120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/></svg>
+                        <div class="detail">
+                            <h3>Open hours</h3>
+                            <p>Mon-Sat 8.30am - 10:00pm</p>
+                        </div>
                 </div>
                 <div class="address-item">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#fef5ac" d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
@@ -106,5 +103,14 @@
         </div>
     </section>
     </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+  duration: 1000,
+  once: false,
+  mirror: true, // Jika ingin animasi juga saat scroll ke atas
+});
+
+</script>
 </body>
 </html>
