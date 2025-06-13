@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 include 'koneksi.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -7,7 +7,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $alamat = $_POST['alamat'];
     $email = $_POST['email'];
 
-    // Simpan ke tabel pembeli
     $query = "INSERT INTO pembeli (nama, no_hp, alamat, email) VALUES ('$nama', '$no_hp', '$alamat', '$email')";
     $result = mysqli_query($koneksi, $query);
 
@@ -38,4 +37,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </form>
   </div>
 </body>
-</html>
+</html> -->

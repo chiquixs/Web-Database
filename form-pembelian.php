@@ -39,7 +39,7 @@ $produk = $_GET['produk'] ?? '';
     <textarea name="alamat" rows="3" placeholder="Alamat Lengkap" required></textarea>
     <label>Jumlah:</label>
     
-    <div style="display:flex; align-items:center; gap:10px;">
+    <div style="display:flex; gap:10px;" class="btn-form">
       <button type="button" onclick="kurangi()">-</button>
       <input type="number" name="jumlah" id="jumlah" value="1" min="1" style="width: 50px;" />
       <button type="button" onclick="tambah()">+</button>
@@ -48,7 +48,7 @@ $produk = $_GET['produk'] ?? '';
     <input type="hidden" name="id_produk" value="<?= htmlspecialchars($produk) ?>">
     <input type="hidden" name="nama_produk" value="<?= htmlspecialchars($nama) ?>">
     <input type="hidden" name="harga_produk" value="<?= htmlspecialchars($harga) ?>">
-    <button type="submit" name="submit">Pesan Sekarang</button>
+    <button type="submit" name="submit" class="btn-pesan">Pesan Sekarang</button>
   </form>
 
   <?php

@@ -11,11 +11,12 @@ include 'koneksi.php';
   
 </head>
 <body>
-  <h2 style="text-align:center; margin-top:30px; color:white;">Daftar Produk Rebant</h2>
+  <h1 style="text-align:center; margin-top:30px; color:white;"> Daftar Produk Rebant </h1>
 
 <div style="text-align: center; margin-top: 30px;">
+  <a href="produk-kosong.php" class="btn-kosong">🛒 Produk Belum Pernah Dibeli 🛒</a>
   <a href="produk_terlaris.php" class="btn-terlaris">🔥 Lihat Produk Terlaris 🔥</a>
-  <a href="produk-kosong.php" class="btn-kosong">🛒 Produk Belum Pernah Dibeli</a>
+  <a href="kategori-produk.php" class="btn-kategori">🎨 Kategori Produk 🎨</a>
 </div>
 
   <div class="produk-container">

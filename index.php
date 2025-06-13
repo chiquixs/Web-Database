@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rebant - Home Interior</title>
-    <div class="user-icon">
+    <!-- <div class="user-icon"> -->
 </div>
 
 </head>
@@ -51,9 +51,13 @@
                     From minimalist designs to nature-inspired artwork, our products are made to bring life, depth, and harmony into your space.
                     Join thousands of satisfied customers who trust REBANT to transform their walls into statements of style and comfort.
                 </p>
-                <div class="button">
+                <!-- <div class="button">
             <button>Contact Us</button>
-        </div>
+        </div> -->
+            <div class="button">
+                <button onclick="location.href='#contact'">Contact Us</button>
+            </div>
+
             </div>
         </div>
     </section>
@@ -65,13 +69,13 @@
                 <div class="mb-text">
                     <p>REBANT Membership</p>
                     <h2>Become a Member and Enjoy Special Prices, New Arrivals, and Personalized Offers!</h2>
-                    <button>Join Our Membership</button>
+                    <button onclick="window.location.href='membership.php'">Join Our Membership</button>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="address">
+    <section class="address" id="contact">
         <div class="address-box">
             <div class="address-left">
                 <h2>Visit Our Shop</h2>
@@ -96,6 +100,7 @@
                         <h3>Phone Number</h3>
                         <p>(+62) 812-944-2123</p>
                     </div>
+
                 </div>
             </div>
         </div>

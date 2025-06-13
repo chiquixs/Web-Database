@@ -14,7 +14,7 @@ body {
     color: white;
     padding: 0;
     width: 100%;
-    height: 100 vh;
+    height: 100vh;
 }
 
 header {
@@ -23,11 +23,6 @@ header {
     padding: 20px;
     background-color: #1f1f60;
 }
-
-/* .logo {
-    flex: 1;
-    margin-left: 90px;
-} */
 
 .logo img {
     height: 100px;
@@ -156,6 +151,11 @@ p {
     background-color: #e0d78c;
     transform: scale(1.05);
 }
+/* 
+html {
+  scroll-behavior: smooth;
+} */
+
 
 /* css halaman produk */
 .produk-container {
@@ -226,7 +226,7 @@ p {
 }
 
 .btn-terlaris:hover {
-  background-color: #ff4c4c;
+  background-color: #fc6161;
 }
 
 .btn-kosong {
@@ -245,7 +245,25 @@ p {
   background-color: #339dff;
 }
 
-/* css halaman pembelian */
+
+.btn-kategori {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #2E99B0;
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease;
+}
+
+.btn-kategori:hover {
+  background-color: #5eb1c4;
+}
+
+
+/* css produk pembelian */
 .produk-container {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -326,7 +344,7 @@ p {
       border-radius: 8px;
       margin-bottom: 15px;
     }
-    form input, form textarea {
+    form input {
       width: 100%;
       padding: 10px;
       margin: 12px 0;
@@ -334,8 +352,21 @@ p {
       border: 1px solid #ccc;
       font-size: 1em;
     }
+
+    form textarea {
+      width: 97%;
+      padding: 10px;
+      margin: 12px 0;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 1em;
+    }
+
     form button {
-      width: 100%;
+      width: 20%;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
       padding: 12px;
       background-color: #f1e99c;
       border: none;
@@ -345,6 +376,26 @@ p {
       font-size: 1.1em;
       color: #1f1f60;
     }
+    .btn-form{
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .btn-pesan {
+      width: 50%;
+      background-color: #f1e99c;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 1.1em;
+      color: #1f1f60;
+      padding: 12px 24px;
+      display: block;
+      margin: 20px auto 0 auto;
+    }
+
     form button:hover {
       background-color: #e0d78c;
     }
@@ -374,7 +425,17 @@ p {
       margin-bottom: 25px;
     }
 
-    form input, form select {
+    form input {
+      width: 97%;
+      padding: 10px;
+      margin: 12px 0;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 1em;
+      
+    }
+
+    form select {
       width: 100%;
       padding: 10px;
       margin: 12px 0;
