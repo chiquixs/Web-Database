@@ -49,7 +49,7 @@ include 'koneksi.php';
     </table>
 
     <div style="text-align:center;">
-      <a href="produk.php" class="back-btn">← Kembali ke Halaman Produk</a>
+      <a href="produk.php" class="back-btn">← Back</a>
     </div>
   </div>
 

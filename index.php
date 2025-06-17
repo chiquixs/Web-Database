@@ -18,7 +18,7 @@
             </div>
             <ul>
                 <li><a href="#about">About Us</a></li>
-                <li><a href="produk.php">Product</a></li>
+                <li><a href="produk-only.php">Product</a></li>
                 <li><a href="membership.php">Membership</a></li>
             </ul>
         </nav>

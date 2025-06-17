@@ -44,7 +44,7 @@ $result = mysqli_query($koneksi, $query);
     </table>
 
     <div style="text-align:center;">
-        <a href="produk.php" class="back-btn">← Kembali ke Produk</a>
+        <a href="produk.php" class="back-btn">← Back</a>
     </div>
     </div>
 </body>

@@ -11,13 +11,8 @@ include 'koneksi.php';
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
 </head>
-<body>
-  <h1 style="text-align:center; margin-top:30px; color:white; font-family: 'Poppins', sans-serif;"> Daftar Produk </h1>
-<div style="text-align: center; margin-top: 30px; font-family: 'Poppins', sans-serif;">
-  <a href="produk-kosong.php" class="btn-kosong">Produk Belum Pernah Dibeli</a>
-  <a href="produk_terlaris.php" class="btn-terlaris">🔥 Lihat Produk Terlaris 🔥</a>
-  <a href="kategori-produk.php" class="btn-kategori">Kategori Produk</a>
-</div>
+<body class="product">
+  <h1 style="text-align:center; margin-top:30px; color:white; font-family: 'Poppins', sans-serif;"> LIST PRODUK </h1>
 
   <div class="produk-container">
     <?php
@@ -31,11 +26,15 @@ include 'koneksi.php';
       echo "<p>Ukuran: {$row['ukuran']}</p>";
       echo "<p>Stok: {$row['stok']} pcs</p>"; 
       echo "<p>Harga: Rp " . number_format($row['harga'], 0, ',', '.') . "</p>";
-      echo "<a href='form-pembelian.php?produk={$row['id_produk']}&nama=" . urlencode($row['nama_produk']) . "&harga={$row['harga']}&ukuran=" . urlencode($row['ukuran']) . "' class='btn-beli'>Beli Sekarang</a>";
       echo "</div>";
     }
+
+    
     ?>
   </div>
+    <div style="text-align: center; margin-bottom: 50px;">
+    <a href="tambah_produk.php" class="btn-tambah">➕ Tambahkan Produk</a>
+    </div>
 </body>
 </html>
 

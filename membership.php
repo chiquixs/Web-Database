@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $umur = $_POST['umur'];
     $kategori = $_POST['kategori'];
 
-    // simpen
+    // menyimpan
     mysqli_query($koneksi, "INSERT INTO member (nama, umur, kategori) VALUES ('$nama', $umur, '$kategori')");
 
     // ambil id member terakir

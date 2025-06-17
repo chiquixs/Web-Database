@@ -787,3 +787,97 @@ html {
     .back-btn:hover {
       background-color: rgb(213, 206, 144);
     }
+
+    /* ADMIN */
+  .btn-tambah {
+  display: inline-block;
+  background-color: #ffc107; /* warna kuning cerah */
+  color: #1f1f60;
+  font-weight: bold;
+  padding: 20px 30px;
+  font-size: 25px;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+.product{
+  margin-bottom: 30px;
+} 
+
+.btn-tambah:hover {
+  background-color: #ffca2c;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* tambah produk */
+        .form-box {
+            width: 500px;
+            margin: 20px auto;
+            padding: 40px;
+            background-color: white;
+            border-radius: 10px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .form-box input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        .form-box button {
+            background-color: #1f1f60;
+            color: white;
+            padding: 10px 8px;
+            border: none;
+            font-weight: bold;
+            border-radius: 6px;
+            width: 200px;
+            /* display: block;          agar tidak sejajar dengan label */
+            margin: 20px auto 0 auto;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .error {
+            color: red;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        form-box .btn-tbh {
+            width: 700px;
+        }
+
+        input[type="file"] {
+    display: none; /* Sembunyikan default */
+        }
+
+        .custom-file-upload {
+            display: block; /* ✅ agar satu baris penuh */
+            width: 100%; 
+            background-color: #f0f0f0;
+            color: #1f1f60;
+            padding: 10px 15px;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            text-align: center;
+            border: 2px dashed #1f1f60;
+            margin-top: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .custom-file-upload:hover {
+            background-color: #1f1f60;
+            color: white;
+        }

@@ -51,9 +51,7 @@ $produk = $_GET['produk'] ?? '';
     <button type="submit" name="submit" class="btn-pesan">Pesan Sekarang</button>
   </form>
 
-  <?php
-  
-
+<?php
 if (isset($_POST['submit'])) {
   $namaPembeli = $_POST['nama'];
   $no_hp = $_POST['no_hp'];
