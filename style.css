@@ -139,6 +139,15 @@ nav ul li a:hover::after {
   z-index: 1;
 }
 
+.hamburger{
+  display: none;
+  font-size: 2em;
+  margin-left: auto;
+  padding: 0px;
+  color: white;
+  cursor: pointer;
+}
+
 h1 {
     font-size: 3.5em;
     margin: 0px 0;
@@ -489,7 +498,7 @@ html {
     .about-us{
       background-color: #ffffff;
       width: 100%;
-      height: 100vh;
+      min-height: 100vh;
     }
     .about-us h1{
       color: #1f1f60;
@@ -644,11 +653,14 @@ html {
       align-items: start;
       justify-content: left;
     }
+
     .address-left h2, .add-desc{
+      color: white;
       margin-left: 30px;
       padding-left: 30px;
       text-align: left;
     }
+    
     .address-left, .address-mid, .address-right{
       flex: 1;
       min-width: 250px;
@@ -881,3 +893,189 @@ html {
             background-color: #1f1f60;
             color: white;
         }
+
+/* RESPONSIVE */
+@media (max-width: 1024px){
+  /* homepage */
+  .content{
+    flex-direction: column;
+    /* text-align: center; */
+    padding: 40px 30px;
+  }
+  .content .text{
+    margin-left: 40px;
+  }
+  .content .image{
+    margin: 20px 40px;
+  }
+  .content .image img{
+    max-width: 100%;
+    height: auto;
+  }
+  nav{
+    justify-content: space-between;
+  }
+  nav ul{
+    margin-top: 20px;
+    margin-right: 0px;
+  }
+  nav ul li{
+    gap: 30px;
+    margin: 0px 10px;
+  }
+  .logo .content{
+    padding-left: 20px;
+    margin-left: 20px;
+  }
+
+  /* about us */
+  .about-us{
+    margin-top: -40px;
+    padding-top: 10px;
+  }
+  .about-img{
+    max-width: 40%;
+    display: flex;
+    justify-content: center;
+    margin-top: -40px;
+  }
+
+  /* membership */
+  .membership{
+    margin-top: 30px;
+    margin: 30px 20px auto;
+  }
+  .mb-content img{
+    max-width: 30%;
+  }
+  .mb-text button{
+    width: 100%;
+    height: auto;
+    font-size: 1rem;
+  }
+  .mb-text h2{
+    font-size: 1.6rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  /* home */
+  .shop-now{
+    width: 40%;
+    font-size: 1em;
+    padding: 10px;
+  }
+  header{
+    padding: 0px;
+  }
+  nav{
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+  }
+  nav ul li{
+    margin: 10px 0;
+  }
+  .logo img{
+    height: 80px;
+  }
+  .hamburger{
+    display: block;
+    margin-top: -60px;
+    padding-top: -30px;
+  }
+  nav ul{
+    display: none;
+    flex-direction: column;
+    width: max-content;
+    background-color: #2e2e8d;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 80px;
+    right: 10px;
+    padding: 10px 20px;
+    z-index: 10;
+  }
+  nav ul.show{
+    display: flex;
+  }
+  nav ul li{
+    margin: 10px 0;
+  }
+  .content .text{
+    margin-left: 20px;
+  }
+  .content .image{
+    margin: 0px 20px;
+  }
+
+  /* about us  */
+  .about-us{
+    margin-top: -30px;
+  }
+  .about-us h1{
+    font-size: 3.2rem;
+    margin-top: -20px;
+    padding-top: -20px;
+  }
+  .desc{
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+  }
+  .about-img{
+    display: flex;
+    justify-content: center;
+    margin-top: -40px;
+    margin-bottom: -40px;
+  }
+  .desc img{
+    max-width: 60%;
+    align-items: center;
+    margin: 0 ;
+    padding-top: 0px;
+  }
+  .about-text{
+    text-align: center;
+    margin-top: 20px;
+  }
+  .about-text p{
+    max-width: 100%;
+    padding: 0 30px;
+    font-size: 1rem;
+    text-align: center;
+  }
+  .about-text p span{
+    font-size: 1.2rem;
+  }
+  .about-text button{
+    width: 30%;
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  /* membership  */
+  .membership{
+    margin: 0 20px;
+    margin-top: 30px;
+  }
+  .mb-content img{
+    max-width: 30%;
+    margin: 0 -10px;
+    justify-content: flex-start;
+    align-items: start;
+    margin-top: 0;
+    padding: 0;
+    display: none;
+  }
+  .mb-text h2{
+    font-size: 1.6rem;
+    width: 100%;
+  }
+  .mb-text button{
+    width: 100%;
+    height: auto;
+    font-size: 1rem;
+  }
+}

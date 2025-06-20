@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // ambil id member terakir
     $id_member = mysqli_insert_id($koneksi);
 
-    echo "<script>alert('Berhasil menjadi member!');</script>";
+    echo "<script>alert('Thanks for Join our Member!');</script>";
 }
 ?>
 
@@ -29,17 +29,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   <div class="container">
     <h2>Join Our Membership Now</h2>
     <form action="" method="post">
-      <input type="text" name="nama" placeholder="Nama Lengkap" required />
-      <input type="number" name="umur" placeholder="Umur" required />
+      <input type="text" name="nama" placeholder="FUll Name" required />
+      <input type="number" name="umur" placeholder="Age" required />
 
-      <select name="kategori" required>
-        <option value="" disabled selected>Pilih Kategori</option>
+      <select name="Category" required>
+        <option value="" disabled selected>Select Category</option>
         <option value="gold">Gold</option>
         <option value="silver">Silver</option>
         <option value="bronze">Bronze</option>
       </select>
 
-      <button type="submit">Daftar Sekarang</button>
+      <button type="submit">Join Now</button>
     </form>
   </div>
 </body>

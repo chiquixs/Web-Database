@@ -18,14 +18,14 @@ $produk = $_GET['produk'] ?? '';
 
 <body>
   <div class="container">
-    <h2>Form Pembelian</h2>
+    <h2>Purchase Form</h2>
 
     <div class="produk-detail">
     <?php
     if ($nama && $ukuran && $harga) {
       echo "<h3>$nama</h3>";
-      echo "<p>Ukuran: $ukuran</p>";
-      echo "<p>Harga: Rp " . number_format($harga, 0, ',', '.') . "</p>";
+      echo "<p>Size: $ukuran</p>";
+      echo "<p>Price: Rp " . number_format($harga, 0, ',', '.') . "</p>";
     } else {
       echo "<p>Produk tidak ditemukan.</p>";
     }
@@ -33,11 +33,11 @@ $produk = $_GET['produk'] ?? '';
   </div>
 
   <form id="pembelianForm" method="post">
-    <input type="text" name="nama" placeholder="Nama Pembeli" required />
-    <input type="text" name="no_hp" placeholder="Nomor HP" required />
+    <input type="text" name="nama" placeholder="Customer Name" required />
+    <input type="text" name="no_hp" placeholder="Phone Number" required />
     <input type="email" name="email" placeholder="Email" required />
-    <textarea name="alamat" rows="3" placeholder="Alamat Lengkap" required></textarea>
-    <label>Jumlah:</label>
+    <textarea name="alamat" rows="3" placeholder="Address" required></textarea>
+    <label>Total:</label>
     
     <div style="display:flex; gap:10px;" class="btn-form">
       <button type="button" onclick="kurangi()">-</button>
@@ -48,7 +48,7 @@ $produk = $_GET['produk'] ?? '';
     <input type="hidden" name="id_produk" value="<?= htmlspecialchars($produk) ?>">
     <input type="hidden" name="nama_produk" value="<?= htmlspecialchars($nama) ?>">
     <input type="hidden" name="harga_produk" value="<?= htmlspecialchars($harga) ?>">
-    <button type="submit" name="submit" class="btn-pesan">Pesan Sekarang</button>
+    <button type="submit" name="submit" class="btn-pesan">Order Now</button>
   </form>
 
 <?php

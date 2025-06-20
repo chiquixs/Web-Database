@@ -13,15 +13,15 @@ include 'koneksi.php';
 
 <body>
   <div class="container">
-    <h2>🛒 Orang Lain Belum Punya 🛒</h2>
+    <h2>🛒 Other People Don't Have 🛒</h2>
 
     <table>
       <tr>
-        <th>ID Produk</th>
-        <th>Nama Produk</th>
-        <th>Ukuran</th>
-        <th>Harga</th>
-        <th>Stok</th>
+        <th>Product ID</th>
+        <th>Product Name</th>
+        <th>Size</th>
+        <th>Price</th>
+        <th>Stock</th>
       </tr>
       <?php
       $query = "

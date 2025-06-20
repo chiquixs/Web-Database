@@ -20,13 +20,13 @@ $result = mysqli_query($koneksi, $query);
 </head>
 <body>
     <div class="container">
-        <h2>Kategori Produk</h2>
+        <h2>Product Category</h2>
 
     <table>
         <thead>
         <tr>
-            <th>Nama Produk</th>
-            <th>Kategori</th>
+            <th>Product Name</th>
+            <th>Category</th>
         </tr>
         </thead>
         <tbody>

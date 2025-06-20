@@ -23,16 +23,16 @@ $result = mysqli_query($koneksi, $query);
 
 <body>
 <div class="container">
-  <h2>🔥 5 Produk Terlaris 🔥</h2>
+  <h2>🔥 5 Best-Selling Products 🔥</h2>
 
   <table>
     <thead>
       <tr>
         <th>No</th>
-        <th>Nama Produk</th>
-        <th>Ukuran</th>
-        <th>Harga</th>
-        <th>Total Terjual</th>
+        <th>Product Name</th>
+        <th>Size</th>
+        <th>Price</th>
+        <th>Total Selling</th>
       </tr>
     </thead>
     <tbody>

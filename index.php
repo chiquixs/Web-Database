@@ -16,6 +16,9 @@
             <div class="logo">
                 <img src="image/logo.png" alt="logo rebant">
             </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                ☰
+            </div>
             <ul>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="produk-only.php">Product</a></li>
@@ -110,6 +113,11 @@
   once: false,
   mirror: true, // Jika ingin animasi juga saat scroll ke atas
 });
+
+function toggleMenu() {
+        const navUl = document.querySelector('nav ul');
+        navUl.classList.toggle('show');
+    }
 
 </script>
 </body>
