@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["password"])) {
     if ($_POST["password"] === $adminPassword) {
         $showForm = true;
     } else {
-        $error = "Password salah!";
+        $error = "Incorrect Password!";
     }
 }
 
@@ -40,13 +40,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["submit_produk"])) {
                 echo "<script>alert('Produk dan gambar berhasil ditambahkan!'); window.location.href='produk.php';</script>";
                 exit;
             } else {
-                $error = "Gagal menyimpan ke database: " . mysqli_error($koneksi);
+                $error = "Failed: " . mysqli_error($koneksi);
             }
         } else {
-            $error = "Gagal mengunggah gambar.";
+            $error = "Failed to Upload.";
         }
     } else {
-        $error = "Format gambar tidak didukung (hanya jpg, jpeg, png, webp).";
+        $error = "Not Support Format (only jpg, jpeg, png, webp).";
     }
 
     $showForm = true; // tetap tampilkan form kalau gagal
@@ -68,9 +68,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["submit_produk"])) {
 
 <?php if (!$showForm): ?>
     <div class="form-box">
-        <h2>Masukkan Password Admin</h2>
+        <h2>Enter Admin Password</h2>
         <form method="post">
-            <input type="password" name="password" placeholder="Password admin" required>
+            <input type="password" name="password" placeholder="Admin Password" required>
             <button type="submit">Submit</button>
         </form>
         <?php if ($error): ?>
@@ -82,18 +82,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["submit_produk"])) {
     <div class="form-box">
         <h2>Form Tambah Produk</h2>
         <form method="post" enctype="multipart/form-data">
-            <input type="text" name="id_produk" placeholder="ID Produk (misal: P001)" required>
-            <input type="text" name="nama_produk" placeholder="Nama Produk" required>
-            <input type="text" name="ukuran" placeholder="Ukuran (misal: 30x40)" required>
-            <input type="number" name="stok" placeholder="Stok" required>
-            <input type="number" name="harga" placeholder="Harga (misal: 50000)" required>
-            <input type="text" name="id_kategori" placeholder="ID Kategori (misal: K001)" required>
+            <input type="text" name="id_produk" placeholder="Product ID (Ex: P001)" required>
+            <input type="text" name="nama_produk" placeholder="Product name" required>
+            <input type="text" name="ukuran" placeholder="Size (Ex: 30x40 cm)" required>
+            <input type="number" name="stok" placeholder="Stock" required>
+            <input type="number" name="harga" placeholder="Price (Ex: 50000)" required>
+            <input type="text" name="id_kategori" placeholder="Category ID (Ex: K001)" required>
 
-            <label for="gambar" class="custom-file-upload">📁 Upload Gambar</label>
+            <label for="gambar" class="custom-file-upload">📁 Upload Image</label>
             <input type="file" name="gambar" id="gambar" accept="image/*" required>
 
 
-            <button type="submit" name="submit_produk" class="btn-tbh" style="width= 700px">Tambah Produk</button>
+            <button type="submit" name="submit_produk" class="btn-tbh" style="width= 700px">Add Product</button>
         </form>
 
     </div>

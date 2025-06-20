@@ -12,7 +12,7 @@ include 'koneksi.php';
 
 </head>
 <body class="product">
-  <h1 style="text-align:center; margin-top:30px; color:white; font-family: 'Poppins', sans-serif;"> LIST PRODUK </h1>
+  <h1 style="text-align:center; margin-top:30px; color:white; font-family: 'Poppins', sans-serif;"> Products List </h1>
 
   <div class="produk-container">
     <?php
@@ -32,8 +32,8 @@ include 'koneksi.php';
     
     ?>
   </div>
-    <div style="text-align: center; margin-bottom: 50px;">
-    <a href="tambah_produk.php" class="btn-tambah">➕ Tambahkan Produk</a>
+    <div style="text-align: center; margin-bottom: 50px; font-size: 1.5rem;">
+    <a href="tambah_produk.php" class="btn-tambah">➕ Add Product</a>
     </div>
 </body>
 </html>
